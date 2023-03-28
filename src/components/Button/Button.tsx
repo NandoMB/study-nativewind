@@ -7,7 +7,7 @@ type ComponentProps = Omit<PressableProps, 'children'> & TextProps & {
 const variantStyles = {
   default: {
     container: 'bg-gray-500 border-gray-500 active:bg-gray-600 active:border-gray-700 dark:bg-gray-400 dark:active:bg-gray-500 dark:border-gray-400 dark:active:border-gray-600',
-    text: 'text-gray-100 dark:text-gray-900',
+    text: 'text-gray-100 dark:text-gray-700',
   },
   primary: {
     container: 'bg-blue-500 border-blue-500 active:bg-blue-600 active:border-blue-700 dark:bg-blue-400 dark:active:bg-blue-500 dark:border-blue-400 dark:active:border-blue-600',
