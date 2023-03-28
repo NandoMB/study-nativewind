@@ -1,14 +1,26 @@
-import { Text, View } from 'react-native';
+import { Text, ScrollView } from 'react-native';
 import Button from '../../src/components/Button';
 
 export default function ButtonShowcase() {
   return (
-    <View className="flex-1 pt-8 gap-4">
-      <Text className="text-2xl color-black dark:color-white">Buttons</Text>
-      <Button>Default</Button>
-      <Button variant="primary">Primary</Button>
-      <Button variant="secondary">Secondary</Button>
-      <Button variant="tertiary">Tertiary</Button>
-    </View>
+    <ScrollView className="flex-1" contentContainerStyle={{ paddingHorizontal: 16, gap: 16 }} showsVerticalScrollIndicator={false}>
+      <Text className="text-2xl color-black dark:color-white">Solid</Text>
+      <Button variant="solid" colorScheme="default">Default</Button>
+      <Button variant="solid" colorScheme="primary">Primary</Button>
+      <Button variant="solid" colorScheme="secondary">Secondary</Button>
+      <Button variant="solid" colorScheme="tertiary">Tertiary</Button>
+
+      <Text className="text-2xl color-black dark:color-white">Outline</Text>
+      <Button variant="outline" colorScheme="default">Default</Button>
+      <Button variant="outline" colorScheme="primary">Primary</Button>
+      <Button variant="outline" colorScheme="secondary">Secondary</Button>
+      <Button variant="outline" colorScheme="tertiary">Tertiary</Button>
+
+      <Text className="text-2xl color-black dark:color-white">Ghost</Text>
+      <Button variant="ghost" colorScheme="default">Default</Button>
+      <Button variant="ghost" colorScheme="primary">Primary</Button>
+      <Button variant="ghost" colorScheme="secondary">Secondary</Button>
+      <Button variant="ghost" colorScheme="tertiary">Tertiary</Button>
+    </ScrollView>
   );
 }
